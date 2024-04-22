@@ -1,0 +1,6 @@
+# Create a variable named data
+data = ("This is a string", [1, 2, 3], 3.14, ("apple", "banana", "cherry"))
+
+# Print the data variable
+print(data)
+
