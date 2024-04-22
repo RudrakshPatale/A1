@@ -1,0 +1,27 @@
+def count_divisions(A, B):
+  """Counts the number of times A is purely divisible by B using a while loop.
+
+  Args:
+      A: The dividend (number to be divided).
+      B: The divisor.
+
+  Returns:
+      The number of times A can be divided by B (division with no remainder).
+  """
+
+  count = 0  # Initialize a counter for divisions
+  while A % B == 0:  # Loop as long as A is divisible by B without remainder
+    A //= B  # Perform integer division (floor division)
+    count += 1  # Increment the counter for each successful division
+  return count
+
+# Example usage
+A = 24
+B = 3
+divisions = count_divisions(A, B)
+
+if divisions > 0:
+  print(f"{A} is divisible by {B} {divisions} times.")
+else:
+  print(f"{A} is not divisible by {B}.")
+  
